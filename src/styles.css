@@ -1,6 +1,4 @@
-/* *{
-    border: 1px solid red;
-} */
+
 
 body{
      margin: 0;
@@ -11,13 +9,17 @@ body{
 }
 
 header{
+    color: white;
+    font-size: 32px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 2rem 1rem;
     background-color: #015263;
 }
 
 main{
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
