@@ -6,18 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <label>Enter city: </label>
-        <input type="text" id="searchCity">
-        <button type="submit" id="searchBtn">Submit</button>
-    </form>
-    <div>
-        <h1 id="location">Location:</h1>
-        <div id="forecastBox">
-            <span id="locationTemp">Temp: </span>
+    <header>
+        <div id="headerTitle">
+            Weather Forecast 
         </div>
-    </div>
+        <div id="formContainer">
+            <form>
+                <input type="text" id="searchCity" placeholder="e.g. London">
+                <button type="submit" id="searchBtn">Submit</button>
+            </form>
+        </div>
 
-    <script src="index.js"></script>
+    </header>
+    <main>
+
+        <div>
+            <div id="loading" style="display:none">Loading...</div>
+            <h1 id="location">Location:</h1>
+            <div id="forecastBox" style="display: none;">
+                <span id="locationCondition">Condition: </span>
+                <span id="locationTemp">Temp: </span>
+                <span id="locationHumidity">Humidity: </span>
+            </div>
+        </div>
+        </main>
+    <footer>
+        misana9 
+    </footer>
+
+    <!-- <script src="./index.js"></script> -->
 </body>
 </html>

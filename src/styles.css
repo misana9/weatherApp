@@ -1,0 +1,109 @@
+/* *{
+    border: 1px solid red;
+} */
+
+body{
+     margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    background-color: #015263;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    flex: 1;
+}
+
+#forecastBox {
+  display: flex;
+  flex-direction: column; /* stack elements vertically */
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* space between child elements */
+  background: #caf0f8;
+  border: 2px solid #00b4d8;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 320px;
+  margin: 2rem auto;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem auto;
+}
+
+input[type="text"] {
+  background-color: #00b4d8;
+  width: 250px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 6px rgba(0, 119, 182, 0.4);
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0096c7;
+  transform: scale(1.05);
+}
+
+
+#forecastBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+#forecastBox h2,
+#forecastBox p {
+  margin: 0.5rem 0;
+  color: #03045e;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+footer{
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#forecastBox{
+    display: flex;
+    flex-direction: column;
+}
